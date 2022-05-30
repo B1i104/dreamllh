@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev":"set PORT=3001 && nodemon index.js",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "Apache-2.0",
