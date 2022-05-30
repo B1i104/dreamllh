@@ -45,6 +45,9 @@ module.exports = function(app){
         res.send(req.headers["x-wx-openid"]);
       }
     });
+    router.get('/api/helloo', async (req,res)=>{
+        res.send('hello')
+    })
     app.use(router)
     return app
 }
