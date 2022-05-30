@@ -1,10 +1,10 @@
-const path = require("path");
+// const path = require("path");
 const express = require("express");
-const cors = require("cors");
-const morgan = require("morgan");
-const { init: initDB, Counter } = require("./db");
+// const cors = require("cors");
+// const morgan = require("morgan");
+// const { init: initDB, Counter } = require("./db");
 const configure = require('./config/configure')
-const logger = morgan("tiny");
+// const logger = morgan("tiny");
 
 const app = express();
 configure(app)

@@ -11,7 +11,7 @@ module.exports = function(app){
 
     // 首页
     router.get("/", async (req, res) => {
-        res.sendFile(path.join(__dirname, "index.html"));
+        res.sendFile(path.join(__dirname, "../index.html"));
     });
   
     // 更新计数
@@ -46,7 +46,10 @@ module.exports = function(app){
       }
     });
     router.get('/api/helloo', async (req,res)=>{
-        res.send('hello')
+        res.send({
+            code:0,
+            data:'hello'
+        })
     })
     app.use(router)
     return app
